@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <script>
+        function gogo(){
+        let cm = document.getElementById("cm").value;
+        let kg = document.getElementById("kg").value;
+        let BMI = kg/(cm*cm);
+        BMI = BMI.toFixed(2);
+    
+        if (BMI < 18.5){
+        document.getElementById("ans").value = "Too skinny";
+        }
+
+        else if (18.5 <= BMI && BMI < 24){
+        document.getElementById("ans").value = "Avg";
+        }
+    
+        else if (24 <= BMI && BMI< 27) {
+        document.getElementById("ans").value = "Above Avg a bit but no worries";
+        }
+    
+        else if (27 <= BMI && BMI< 30) {
+        document.getElementById("ans").value ="A little high better watch out";
+        }
+    
+        else if (30 <= BMI && BMI < 35){
+        document.getElementById("ans").value ="Middle obesity";
+        }
+    
+        else {
+        document.getElementById("ans").value ="Extreme obesity !";
+        }
+
+        document.getElementById("BMI").value = BMI;
+    }
+    </script>
+    
+
+    <h1>Let see your BMI !!</h1>
+
+    <label for="fname">Hight:</label><br>
+    <input type="number" id="cm"><br>
+
+    <label for="lname">Weight:</label><br>
+    <input type="number" id="kg"><br><br>
+
+    <button onclick="gogo()">Submit</button>
+
+    <div><output id="BMI"></div>
+    <div><output id="ans"></div>
+
+</body>
+</html>
