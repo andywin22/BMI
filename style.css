@@ -6,37 +6,33 @@
 }
 
 body{
-    background-image: url("https://celcliptipsprod.s3-ap-northeast-1.amazonaws.com/tips_article_body/774e/1644951/a15f06f41d79337c6ebde50c20969fee");
+    display: flex;
+    min-height: 100vh;
+    background-image: url("https://images.pexels.com/photos/1261728/pexels-photo-1261728.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-repeat: no-repeat;
+    background-size: auto;
     background-size: cover;
     background-position: center;
-}
-
-.box_centre{
-    display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    color: white;
     
 }
 
 .inside_box{
     width: 30%;
     padding: 50px;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0, 0.4);
-    background-position: center;
-    border: 5px solid gray;
+    background : transparent;
+    backdrop-filter: blur(5px);
+    border: 2px solid gray;
+    box-shadow: 0 0 10px rgba(142, 142, 142, 0.614);
     border-radius: 3%;
-    border-color: rgb(0,0,0);
-    border-color: rgba(106, 105, 105, 0.4);
 }
 
 .input_size{
     width: 100%;
     padding: 5px;
     background-color: rgb(0,0,0);
-    background-color: rgba(167, 167, 167, 0.604);
+    background-color: rgba(255, 255, 255, 0.345);
 }
 
 .submit_size{
@@ -45,14 +41,14 @@ body{
 }
 
 ::placeholder {
-    color: whitesmoke;
+    color: rgb(40, 40, 40);
     opacity: 1; /* Firefox */
 }
   
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-   color: whitesmoke;
+    color: rgb(40, 40, 40);
 }
   
 ::-ms-input-placeholder { /* Microsoft Edge */
-   color: whitesmoke;
+    color: rgb(40, 40, 40);
 }
