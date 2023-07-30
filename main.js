@@ -2,6 +2,7 @@ function caculate(){
     let cm = document.getElementById("cm").value;
     let kg = document.getElementById("kg").value;
     let BMI = kg/(cm*cm);
+    
     BMI = BMI.toFixed(2);
     document.getElementById("BMI").value = BMI;
 

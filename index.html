@@ -4,20 +4,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
-<script src="main.js"></script>
 <body>
     <div class="inside_box">
         <form action="">
             <h2>Let see your BMI !!</h2><br>
-            <input type="number" class="input_size" id="cm" placeholder="Height"><br><br>
-            <input type="number" class="input_size" id="kg" placeholder="Weight"><br><br>
-            <button onclick="caculate()" class="submit_size">Submit</button><br><br>
-            <output id="BMI"></output><br><br>
-            <output id="ans"></output>
+            <input type="number" class="input_style" id="cm" placeholder="Height"><br><br>
+            <input type="number" class="input_style" id="kg" placeholder="Weight"><br><br>
+            <button onclick="caculate()" class="submit_size">Submit</button><br>
+            <output class="output_size" id="BMI"></output><br><br>
+            <output class="output_size" id="ans"></output>
+            <div id="count2"></div>
         </form>    
     </div></div>
 </body>
