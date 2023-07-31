@@ -17,36 +17,36 @@ body{
     align-items: center;
 }
 
-.inside_box{                  /*All backdrop-filter(blur) in this box will do the work, so other box wont need to add more this function*/
+.box_border{                  /*All backdrop-filter(blur) in this box will do the work, so other box wont need to add more this function*/
     width: 30%;
-    padding: 50px;
+    padding: 30px;
     background : transparent;
     backdrop-filter: blur(5px);
     border: 2px solid gray;
-    box-shadow: 0 0 10px rgba(142, 142, 142, 0.614);
+    box-shadow: 0 0 10px rgba(142, 142, 142, 0.6);
     border-radius: 40px;
 }
 
 .input_style{
     width: 100%;
-    padding: 15px;
-    background : transparent;
+    padding: 8px;
+    background-color: rgba(255, 255, 255, 0.9);
     border: 2px solid gray; 
     border-radius: 40px;
     font-size: 15px;
 }
 
-.submit_size{
-    width: 50%;
-    padding: 10px;
-    border-color: rgba(59, 59, 59, 0.593);
+.submit_style{
+    width: 30%;
+    padding: 5px;
+    border-color: rgba(59, 59, 59, 0.6);
     border-radius: 40px;
     display: block;
     margin: 0 auto;
-    background-color: rgba(255, 255, 255, 0.451);
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
-.output_size{
+.output_style{
     font-size: 18px;
     color: white;
 }
@@ -62,4 +62,23 @@ body{
   
 ::-ms-input-placeholder { /* Microsoft Edge */
     color: rgb(40, 40, 40);
+}
+
+@media(max-width:500px){
+    .box_border{
+        width: 70%;
+    }
+
+    .input_style{
+        font-size: 10px;
+    }
+
+    .output_style{
+        font-size: 10px;
+    }
+
+    .submit_style{
+        width: 40%;
+    }
+
 }
